@@ -29,7 +29,6 @@ const Form = ({ onSubmit }) => {
     setName("");
     setNumber("");
   };
-
   return (
     <form className={css.form} onSubmit={handleSubmit}>
       <label className={css.form__label} htmlFor={nameInputId}>
@@ -66,6 +65,5 @@ const Form = ({ onSubmit }) => {
     </form>
   );
 };
-
 export default Form;
 Form.protoTypes = { onSubmit: PropTypes.func.isRequired };
