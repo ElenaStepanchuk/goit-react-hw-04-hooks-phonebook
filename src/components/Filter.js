@@ -2,9 +2,9 @@ import React from "react";
 import css from "./Filter.module.css";
 import PropTypes from "prop-types";
 
-const Filter = ({ htmlFor, onChange, value, id }) => {
+const Filter = ({ onChange, value, id }) => {
   return (
-    <label className={css.filter__label} htmlFor={htmlFor}>
+    <label className={css.filter__label} htmlFor={id}>
       Find contacts by name &nbsp;
       <input
         className={css.filter__input}
@@ -24,5 +24,4 @@ Filter.protoType = {
   value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   id: PropTypes.string.isRequired,
-  htmlFor: PropTypes.string.isRequired,
 };
